@@ -1,0 +1,26 @@
+@-webkit-keyframes psy {
+  0% {
+    -webkit-filter: hue-rotate(0deg) saturate(2) invert(0);
+  }
+  
+  50% {
+    -webkit-filter: hue-rotate(360deg) saturate(8) invert(.25);
+  }
+  
+  100% {
+    -webkit-filter: hue-rotate(0deg) saturate(2) invert(0);
+  }
+}
+body{
+  background:#111;
+  color:#fff;
+  text-align:center;
+}
+img{
+height:10%;
+width: 100%;
+  -webkit-animation: psy linear 10s infinite;
+  -moz-animation: psy linear 10s infinite;
+  -o-animation: psy linear 10s infinite;
+  animation: psy linear 10s infinite;
+}
